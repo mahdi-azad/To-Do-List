@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+body {
+    font-family:  'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-image: url(images/hello.gif);
+    background-repeat: no-repeat;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+.container {
+    background-color: rgb(237, 183, 183);
+    width: 600px;
+    margin: 0 auto;
+    border: 1px solid black;
+    margin-top: 30px;
+    box-shadow: 5px 5px 50px black;
+    border-radius: 8px;
+}
+.todo {
+    text-align: center;
+    padding: 50px;
+}
+#addtask {
+    cursor: pointer;
+    background-color: lightcoral;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-size: 1.3em;
+}
+#addtask:hover {
+    background-color: lightpink;
+    transition: 0.2s ease-in-out;
+}
+#task {
+    border-radius: 3px;
+    width: 350px;
+    height: 45px;
+    padding: 10px;
+    font-size: 1.3em;
+}
+ul {
+    list-style: none;
+}
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 10px;
+    padding: 10px;
+    color: white;
+    font-size: 1.2em;
+    border: 1px solid gray;
+    background-color: rgb(245, 95, 130);
+    border-radius: 8px;
+    
+}
+#delete {
+    color: lightpink;
+    cursor: pointer;
+    padding: 5px;
+    background-color: darkred;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 10px;
+}
+#delete:hover {
+    background-color: lightcoral;
+    transition: 0.2s ease-in-out;
+}
+@media only screen and (max-width: 768px) {
+    img {
+    height: 100vh;
+    }
+    .container {
+        background-color: rgb(237, 183, 183);
+        width: auto;
+        margin: 0px 50px;
+        border: 1px solid black;
+        margin-top: 30px;
+        box-shadow: 5px 5px 50px black;
+        border-radius: 8px;
+    }
+    .todo {
+        display: flex;
+        flex-direction: column;
+        
+    }
+    #task {
+        border-radius: 3px;
+        width: auto;
+        margin: 10px;
+        height: 45px;
+        font-size: 1.3em;
+    }
+    button {
+        width: auto;
+        margin: 0 auto;
+    }
+    li {
+        display: flex;
+        flex-direction: column;
+    }
+}
